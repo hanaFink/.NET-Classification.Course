@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("please enter option : 1= add, 2= sub, 3 = mul, 4 = div, 5 = exit");
+			int opt = Convert.ToInt32(Console.ReadLine()); ;
+			int a, b;
+			if (opt == 5)
+				Console.WriteLine("exit");
+			while (opt != 5)
+			{
+				if (opt < 6 && opt > 0)
+				{
+					Console.WriteLine("please enter a");
+
+					a = Convert.ToInt32(Console.ReadLine());
+					Console.WriteLine("please enter b");
+
+					b = Convert.ToInt32(Console.ReadLine());
+					if (opt == 1)
+						Console.WriteLine(a + b);
+					if (opt == 2)
+						Console.WriteLine(a - b);
+					if (opt == 3)
+						Console.WriteLine(a * b);
+					if (opt == 4)
+						Console.WriteLine(a / b);
+					if (opt == 5)
+						Console.WriteLine("exit");
+				}
+				if (opt > 5 || opt < 1)
+					Console.WriteLine("error");
+				Console.WriteLine("please enter option : 1= add, 2= sub, 3 = mul, 4 = div, 5 = exit");
+				opt = Convert.ToInt32(Console.ReadLine());
+
+			}
+		}
+	}
+}
