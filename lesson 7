@@ -1,0 +1,43 @@
+//ex.1
+//print out numbers from 1 to 2000
+for (int i=1;i<2001;i++ )
+    {
+     Console.WriteLine(i);
+    }
+//print out even numbers from 1 to 100
+for (int i=2;i<101;i+=2 )
+   {
+     Console.WriteLine(i);
+    }
+//print out only dozens from 1 to 100
+for (int i=10;i<101;i+=10 )
+    {
+     Console.WriteLine(i);
+    }
+//ex.2
+//print out numbers from 100 to
+for (int i=100;i>0;i--)
+{
+     Console.WriteLine(i);
+    }
+//ex.3
+//input number
+//check if the number is two digits number
+//print out dozens
+//print out unit
+//if dozens bigger than units print out "asarot"
+//else print out "ahadot"
+   int a = Convert.ToInt32(Console.ReadLine());
+   if (a/10 > 0 && a/10 <10)
+   {
+     Console.WriteLine(a%10);
+     Console.WriteLine(a/10);
+     if (a%10 > a/10)
+         Console.WriteLine("ahadot");
+     else
+       Console.WriteLine("asarot");
+   }
+  else
+   {
+      Console.WriteLine("exit");
+   }
