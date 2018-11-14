@@ -80,3 +80,23 @@ for (int i=100;i>0;i--)
 
 			}
 			*/
+			/*
+			// do not input a
+			for (int a = 1; a <= 100; a++)
+			{
+				int m = 2;
+				while (a % m != 0 && m < a)
+				{
+					m = m + 1;
+				}
+				if (m < a)
+				{
+					Console.WriteLine("not firs "+ a);
+				}
+				else
+				{
+					Console.WriteLine("first  "+a );
+
+				}
+			}
+			*/
